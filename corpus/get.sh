@@ -103,7 +103,12 @@ for URL in $(cat $liens); do
 
 	# Beautiful Soup script to keep only <p> inner content text
 	PARAGRAPH_F="./corpus/paragraph/$OUTPUT_NUMBER.txt"
-	./get_p_content.py $ASPIRATION_F > $PARAGRAPH_F
+	if [[ "$URL" == *"ciis.org"* ]]; then
+		echo "Lien ciis. Pas de balises <p>. Traitement du corpus..."
+		./get_after_h3.py $ASPIRATION_F > $PARAGRAPH_F
+	else
+		./get_p_content.py $ASPIRATION_F > $PARAGRAPH_F
+	fi
 
 	# Count of occurrences
 	COUNT=$(echo $CONTEXT | tr ' ' '\n' | egrep -ci "$EXPR_REG")
