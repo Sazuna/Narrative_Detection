@@ -14,7 +14,8 @@ def get_mots(fichiers, mots_dict):
 		with open (fichier, 'r') as f:
 			lignes = f.readlines() 
 		for ligne in lignes:
-			mots = jieba.cut_for_search(ligne)
+			#mots = jieba.cut_for_search(ligne)
+			mots = jieba.cut(ligne)
 			for mot in mots:
 				mots_dict[mot] += 1
 

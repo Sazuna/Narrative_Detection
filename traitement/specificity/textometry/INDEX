@@ -1,0 +1,19 @@
+bfm                     adverbs frequency from 5 different domains of
+                        the BFM database
+progression             Draw progression graphic
+robespierre             5 words from Robespierre's discourses
+specificities           Calculate Lexical Specificity Score
+specificities.distribution.plot
+                        Display specificities probability
+specificities.lexicon   *OBSOLETE FUNCTION (see
+                        'specificities.lexicon.new')* specificities
+                        association score with two frequency lists.
+specificities.lexicon.new
+                        specificities association score with two
+                        frequency list.
+specificities.probabilities
+                        Calculate specificity probabilities
+specificities.probabilities.vector
+                        Vector raw hypergeometric probabilities
+textometry-package      Textual Data Analysis Package used by the TXM
+                        Software

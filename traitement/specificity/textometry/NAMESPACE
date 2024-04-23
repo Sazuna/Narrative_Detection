@@ -1,0 +1,15 @@
+import("grDevices")
+
+importFrom("graphics", "Axis", "arrows", "legend", "points", "text", "title", "plot")
+importFrom("stats", "density", "dhyper", "phyper")
+
+# file "R/specificities.R"
+export(specificities,
+	   specificities.distribution.plot,
+	   specificities.lexicon,
+	   specificities.lexicon.new,
+	   specificities.probabilities,
+	   specificities.probabilities.vector)
+
+# file "R/progression.R"
+export(progression)
